@@ -1,0 +1,26 @@
+{
+  "name": "week-12-homework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "seed": "node seed.js",
+    "quit": "node quit.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DonAvworo/week-12-homework.git"
+  },
+  "author": "Don Avworo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DonAvworo/week-12-homework/issues"
+  },
+  "homepage": "https://github.com/DonAvworo/week-12-homework#readme",
+  "dependencies": {
+    "inquirer": "^9.1.0",
+    "mysql": "^2.18.1"
+  }
+}
