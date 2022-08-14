@@ -33,6 +33,6 @@ app.get('/createdb', (req, res) => {                //create a get request for t
 });  
 
 // listen to the port 3001
-app.listen(3306, () => {
-    console.log('Server started on port 3306...');
+app.listen(3001, () => {
+    console.log('Server started on port 3001...');
 });
