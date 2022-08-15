@@ -19,9 +19,9 @@ INSERT INTO Employee_Role (title, salary, department_id) VALUES
 
 
 INSERT INTO Employee (first_name, last_name, role_id) VALUES 
-('Moe', 'Doe', 1), -- this will be inserted into the employee table and will be the first name of the employee
-('Plain T', 'Moonie', 2),  -- this will be inserted into the employee table and will be the first name of the employee
-('Joe', 'Doe', 3),   -- this will be inserted into the employee table and will be the first name of the employee
-('Jill', 'Bills', 4),  -- this will be inserted into the employee table and will be the first name of the employee
-('Ten', 'Mil', 5),  -- this will be inserted into the employee table and will be the first name of the employee
-('Payy', 'Mei', 6);   -- this will be inserted into the employee table and will be the first name of the employee
+('Moe', 'Doe', 1),          -- this will be inserted into the employee table and will be the first name of the employee
+('Plain T', 'Moonie', 2),   -- this will be inserted into the employee table and will be the first name of the employee
+('Joe', 'Doe', 3),          -- this will be inserted into the employee table and will be the first name of the employee
+('Jill', 'Bills', 4),       -- this will be inserted into the employee table and will be the first name of the employee
+('Ten', 'Mil', 5),          -- this will be inserted into the employee table and will be the first name of the employee
+('Payy', 'Mei', 6);         -- this will be inserted into the employee table and will be the first name of the employee

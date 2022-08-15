@@ -2,24 +2,8 @@
 const express = require('express'); //import express module
 const mysql = require('mysql');     //import mysql module
 const app = express();              //create an instance of express
-// const PORT = process.env.PORT || 3001; //set the port number
+const PORT = process.env.PORT || 3001; //set the port number
 
-
-//creat connection for the database
-const db = mysql.createConnection({
-    host: 'localhost',              //host name of the database server (localhost is the default for system)
-    user: 'root',                   //user name for the database
-    password: '',                   //password for the database 
-    database: 'test'                // temporary name of the database
-});
-
-// create connection to the database
-db.connect((err) => {
-    if(err){                        //if there is an error in the connection
-        throw err;                  //throw the error to the console to be displayed
-    }
-    console.log('MySql Connected...'); //if the connection is successful then display this message
-});
 
 //create database table for the database
 app.get('/createdb', (req, res) => {                //create a get request for the createdb route and pass a callback function
