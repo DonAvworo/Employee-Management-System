@@ -1,8 +1,8 @@
 //import all the required modules for the server
-const express = require('express'); //import express module
-const mysql = require('mysql');     //import mysql module
-const app = express();              //create an instance of express
-const PORT = process.env.PORT || 3001; //set the port number
+const express = require('express');                 //import express module
+const mysql = require('mysql');                     //import mysql module
+const app = express();                              //create an instance of express
+const PORT = process.env.PORT || 3001;              //set the port number
 
 
 //create database table for the database
@@ -16,7 +16,7 @@ app.get('/createdb', (req, res) => {                //create a get request for t
     );
 });  
 
-// listen to the port 3001
-app.listen(3001, () => {
-    console.log('Server started on port 3001...');
+// listen to the port 3001 via the .env variable (imported from the .env file (variable) attached to the connections.js file inside utils/connections.js)
+app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
 });
