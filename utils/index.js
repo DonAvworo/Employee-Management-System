@@ -3,10 +3,10 @@ const prompts = require('./helpers/prompts');       //import the prompts file fr
 
 //run the prompts function and pass the result to the main function
 prompts()                                           //run the prompts function and pass the result to the main function
-.then(result => {
-    main(result);
-}).catch(err => {
-    console.log(err);
+.then(result => {                                   //when the result is returned from the prompts function ...
+    main(result);                                   //...run the main function and pass the result to it
+}).catch(err => {                                   //if there is an error ...
+    console.log(err);                                //...log the error to the console
 }
 );
 
