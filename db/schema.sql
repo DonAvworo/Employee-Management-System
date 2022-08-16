@@ -21,7 +21,6 @@ CREATE TABLE IF NOT EXISTS employee_role (
   FOREIGN KEY (department_id) REFERENCES department(id) -- foreign key is the department id of the role table and will reference the department table to any changes made to the department table
 );
 
-
 -- create table for the employee data
 CREATE TABLE IF NOT EXISTS employee (
   id int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, -- primary key is auto incremented and not null and will be the id of the employee table

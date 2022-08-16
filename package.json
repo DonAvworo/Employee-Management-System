@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "node server.js",
     "seed": "node seed.js",
     "quit": "node quit.js",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -22,6 +22,7 @@
   "dependencies": {
     "dotenv": "^16.0.1",
     "express": "^4.18.1",
+    "inquirer": "^9.1.0",
     "mysql": "^2.18.1",
     "mysql2": "^2.3.3"
   }

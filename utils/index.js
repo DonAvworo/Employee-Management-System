@@ -1,4 +1,15 @@
 const connections = require('./connections');       //import the connections file from the utils folder and store it in the connections variable
+const prompts = require('./helpers/prompts');       //import the prompts file from the utils folder and store it in the prompts variable
+
+//run the prompts function and pass the result to the main function
+prompts()                                           //run the prompts function and pass the result to the main function
+.then(result => {
+    main(result);
+}).catch(err => {
+    console.log(err);
+}
+);
+
 
 //create a class for the database connection using a constructor function
 class Database {
