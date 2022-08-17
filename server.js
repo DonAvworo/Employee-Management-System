@@ -1,9 +1,8 @@
 //import all the required modules for the server
-const express = require('express');                 //import express module
-const mysql = require('mysql');                     //import mysql module
+// const mysql = require('mysql');                     //import mysql module
 const app = express();                              //create an instance of express
 const PORT = process.env.PORT || 3001;              //set the port number
-
+const inquirer = require('inquirer');               //import inquirer module
 
 //create database table for the database
 app.get('/createdb', (req, res) => {                //create a get request for the createdb route and pass a callback function

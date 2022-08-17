@@ -6,7 +6,7 @@ prompts()                                           //run the prompts function a
 .then(result => {                                   //when the result is returned from the prompts function ...
     main(result);                                   //...run the main function and pass the result to it
 }).catch(err => {                                   //if there is an error ...
-    console.log(err);                                //...log the error to the console
+    console.log(err);                               //...log the error to the console
 }
 );
 
